@@ -3,8 +3,8 @@ import Image from 'next/image';
 export default function Hero() {
   return (
 
-    // bg-gradient-to-r from-[#ffffff] via-[#f0f4ff] to-[#092fc8bd]
-    <section className="flex flex-col lg:flex-row items-center justify-between px-2 md:px-12 lg:px-18 ">
+    
+    <section className="flex flex-col lg:flex-row items-center justify-between px-2 md:px-12 lg:px-18 // bg-gradient-to-r from-[#ffffff] via-[#f0f4ff] to-[#092fc8bd] ">
       {/* Text Content */}
       <div className="lg:w-1/2 text-center lg:text-left space-y-0">
         <h1 className="text-[35px] text-center lg:text-start sm:text-[40px] md:text-[40px] lg:text-[42px] font-bold mt-11 lg:mt-8 text-black">
