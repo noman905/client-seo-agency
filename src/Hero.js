@@ -22,13 +22,13 @@ export default function Hero() {
       {/* Image Section */}
       <div className="lg:w-1/2 mb-10 lg:mb-0 flex justify-center lg:justify-end">
         {/* Mobile-only blue circle with shadow */}
-        <div className="block  mt-5 bg-[#0633e8] p-5 rounded-full shadow-lg">
+        <div className="block  mt-5 bg-[#0633e8] p-5 rounded-full shadow-3xl">
           <Image
             src="/hero2.png"
             alt="Mohsin Arshad"
             width={280}
             height={280}
-            className="w-[250px] h-[250px] sm:h-[320px] sm:w-[320px] md:h-[380px] md:w-[380px]   lg:h-[450px] lg:w-[450px] object-contain rounded-full"
+            className="w-[250px] h-[250px] sm:h-[320px] sm:w-[320px] md:h-[380px] md:w-[380px]   lg:h-[430px] lg:w-[430px] object-contain rounded-full"
           />
         </div>
 
