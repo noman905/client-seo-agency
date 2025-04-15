@@ -8,8 +8,8 @@ export default function Hero() {
         <h1 className="text-[35px] text-center lg:text-start sm:text-[40px] md:text-[40px] lg:text-[42px] font-bold mt-11 text-black">
           Mohsin Arshad
         </h1>
-        <h2 className="text-[30px] sm:text-[41px] md:text-[41px] lg:text-[48px] lg:leading-16 font-bold text-black">
-          Digital Marketer <span className="text-blue-600">& <br /> SEO Expert</span>
+        <h2 className="text-[30px] sm:text-[41px] md:text-[41px] lg:text-[47px] lg:leading-16 font-bold text-black">
+          Digital Marketer <span className="text-blue-600">&amp; <br /> SEO Expert</span>
         </h2>
         <p className="text-black sm:px-10 md:px-11 lg:px-0 md:text-center lg:text-start text-base md:text-lg mt-5">
           A one-stop solution for Digital Marketing, Web Design, SEO, and Content Writing to take your business to the next level.
