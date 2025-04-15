@@ -25,7 +25,6 @@ export default function Navbar() {
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Navbar wrapper */}
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex-shrink-0">
@@ -35,7 +34,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex space-x-6 items-center text-black font-medium">
+          <nav className="hidden lg:flex space-x-6 items-center text-black font-medium">
             {navLinks.map((item, i) => (
               <div key={i} className="relative group cursor-pointer">
                 <Link
@@ -62,7 +61,7 @@ export default function Navbar() {
           </nav>
 
           {/* Mobile Toggle Button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={toggleMobileMenu}
               className="text-black focus:outline-none"
@@ -85,7 +84,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden flex flex-col items-center text-center space-y-4 pb-4 text-black font-medium animate-fadeIn">
+          <div className="lg:hidden flex flex-col items-center text-center space-y-4 pb-4 text-black font-medium animate-fadeIn">
             {navLinks.map((item, i) => (
               <Link
                 key={i}
