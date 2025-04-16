@@ -15,6 +15,14 @@ const services = [
     icon: '/Services/service2.png',
   },
   {
+    title: 'Off Page SEO',
+    icon: '/Services/service5.png',
+  },
+  {
+    title: 'ON Page SEO',
+    icon: '/Services/service6.png',
+  },
+  {
     title: 'Web Designing',
     icon: '/Services/service3.png',
   },
@@ -39,7 +47,7 @@ export default function Services() {
     <motion.section
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3 }}
+      transition={{ duration: 0.1 }}
       viewport={{ once: true }}
       className="bg-white py-16 px-4 md:px-12 lg:px-20"
       id="services"
@@ -71,7 +79,7 @@ export default function Services() {
 
         {/* CTA Button */}
         <motion.button
-          whileHover={{ scale: 1.05 }}
+          whileHover={{ scale: 1.02 }}
           className="mt-10 bg-[#155dfc] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-black transition-all duration-300"
         >
           View All Services
@@ -88,7 +96,7 @@ const AnimatedCard = ({ icon, title }) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.2 }}
+      transition={{ duration: 0.1 }}
     >
       <Image
         src={icon}
