@@ -1,7 +1,11 @@
 import Navbar from "@/Navbar";
 import Hero from "@/Hero";
 import Services from "@/services";
+
 import AboutMe from "@/aboutme";
+
+
+import Testimonials from "@/testimonials";
 
 
 export default function Home() {
@@ -13,6 +17,7 @@ export default function Home() {
     <Hero />
     <Services />
     <AboutMe />
+    <Testimonials />
     </>
   );
 }
