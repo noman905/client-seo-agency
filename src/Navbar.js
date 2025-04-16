@@ -37,8 +37,8 @@ export default function Navbar() {
           <nav className="hidden lg:flex space-x-6 items-center text-black font-medium">
             {navLinks.map((item, i) => (
               <div key={i} className="relative group cursor-pointer">
-                <Link
-                  href={`/${item.toLowerCase().replace(/\s+/g, '-')}`}
+                <a
+                  href={`#${item}`}
                   className="transition-all duration-300 hover:text-blue-600"
                 >
                   <div className="flex items-center">
@@ -47,7 +47,7 @@ export default function Navbar() {
                       <FiChevronDown className="w-4 h-4 ml-1" />
                     )}
                   </div>
-                </Link>
+                </a>
                 <div className="absolute left-0 bottom-0 w-full h-0.5 bg-blue-600 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300"></div>
               </div>
             ))}

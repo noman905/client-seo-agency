@@ -31,6 +31,7 @@ export default function Services() {
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
       className="bg-white py-16 px-4 md:px-12 lg:px-20"
+      id="Services"
     >
       <div className="max-w-7xl mx-auto mt-5 text-center">
         {/* Heading */}
