@@ -16,9 +16,11 @@ export default function Hero() {
         <p className="text-black sm:px-10 md:px-11 lg:px-0 md:text-center lg:text-start text-base md:text-lg mt-2">
           A one-stop solution for Digital Marketing, Web Design, SEO, and Content Writing to take your business to the next level.
         </p>
+        <a href='#services'>
         <button className="bg-black  text-white px-5 py-3 rounded-lg font-semibold mt-6 hover:bg-[#082fca] transition duration-300">
           View Our Services
         </button>
+        </a>
       </div>
 
      {/* Image Section */}
