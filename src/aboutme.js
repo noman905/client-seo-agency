@@ -29,14 +29,15 @@ export default function AboutMe() {
 
         {/* Right - Text */}
         <div className="w-full md:w-1/2 text-center md:text-left">
-          <p className="text-lg pl-4 font-normal text-start text-black mb-4">
+        <h1 className="pl-4 mb-3.5 text-2xl">Welcome to Digital Marketing Agency!</h1>
+          <p className="text-lg pl-4 text-start text-black mb-4">
           Hi, I’m Mohsin Arshad — digital marketer and SEO expert with 3+ years of experience. I help businesses grow through tailored strategies.
 
 We focus on WordPress, SEO, content writing, and social media marketing to build strong online brands.
 
 
           </p>
-          <p className="text-lg pl-4 font-normal text-start text-black">
+          <p className="text-lg pl-4 text-start text-black">
           Unlike others, we don’t just offer services we craft solutions that match your goals and drive success.
 
 Let’s take your business to the next level!
