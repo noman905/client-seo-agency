@@ -27,10 +27,10 @@ export default function Hero() {
      <div className="lg:w-1/2 mb-10 lg:mt-0 flex justify-center lg:justify-end">
   <div className="relative flex items-center justify-center">
     {/* Blue Glow Behind Image */}
-    <div className="absolute mt-24 z-0 w-[244px] h-[245px] sm:w-[300px] sm:h-[300px] md:w-[390px] md:h-[300px] lg:w-[385px] lg:h-[385px] rounded-full bg-[#1351d8] blur-2xl opacity-100"></div>
+    {/* <div className="absolute mt-24 z-0 w-[244px] h-[245px] sm:w-[300px] sm:h-[300px] md:w-[390px] md:h-[300px] lg:w-[385px] lg:h-[385px] rounded-full bg-[#1351d8] blur-2xl opacity-100"></div> */}
 
     {/* Hero Image with Circle */}
-    <div className="mt-15 bg-[#0633e8] p-0 rounded-full shadow-3xl relative z-10">
+    <div className="mt-15 shadow-2xl shadow-blue-600 bg-[#0633e8] p-0 rounded-full shadow-3xl relative z-10">
       <Image
         src="/hero.png"
         alt="Mohsin Arshad"

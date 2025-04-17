@@ -1,6 +1,7 @@
 "use client";
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 
@@ -52,7 +53,7 @@ export default function Services() {
       className="bg-white py-16 px-4 md:px-12 lg:px-20"
       id="services"
     >
-      <div className="max-w-7xl mx-auto mt-5 text-center">
+      <div className="max-w-7xl mx-auto mt-5  text-center">
         <h2 className="text-4xl lg:text-[46px] font-bold text-black mb-4">Our Services</h2>
         <p className="text-lg text-gray-700 mb-10 max-w-2xl mx-auto">
           We offer a full suite of digital solutions to help your brand grow online.
@@ -78,12 +79,14 @@ export default function Services() {
         </div>
 
         {/* CTA Button */}
+        <Link href='allservices'>
         <motion.button
           whileHover={{ scale: 1.02 }}
           className="mt-10 bg-[#155dfc] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-black transition-all duration-300"
         >
           View All Services
         </motion.button>
+        </Link>
       </div>
     </motion.section>
   );
@@ -92,7 +95,7 @@ export default function Services() {
 const AnimatedCard = ({ icon, title }) => {
   return (
     <motion.div
-      className="min-w-[240px] bg-white border border-black rounded-xl p-6 flex flex-col items-center justify-center shadow-md hover:scale-105 transition-transform duration-300"
+      className="min-w-[240px] shadow-md shadow-[#0832da] bg-white border border-black rounded-xl p-6 flex flex-col items-center justify-center shadow-md hover:scale-105 transition-transform duration-300"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}

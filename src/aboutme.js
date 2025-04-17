@@ -17,7 +17,7 @@ export default function AboutMe() {
       <div className="max-w-7xl  mx-auto flex flex-col md:flex-row items-center gap-12">
         {/* Left - Image */}
         <div className="w-full md:w-1/2 flex justify-center">
-        <div className="w-64 h-64 bg-[#0633e8] lg:w-76 lg:h-76 relative rounded-full overflow-hidden shadow-lg drop-shadow-[0_0_30px_white]">
+        <div className="w-64 h-64 shadow-lg shadow-blue-600 bg-[#0633e8] lg:w-76 lg:h-76 relative rounded-full overflow-hidden  drop-shadow-[0_0_30px_white]">
   <Image
     src="/aboutme/about.png"
     alt="Profile"
