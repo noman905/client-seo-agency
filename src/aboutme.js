@@ -15,15 +15,24 @@ export default function AboutMe() {
 
       {/* Flex Layout */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
-        {/* Left - Image */}
+        {/* Left - Image with Styled Frame */}
         <div className="w-full md:w-1/2 flex justify-center">
-          <div className="w-64 h-64 shadow-lg shadow-blue-600 bg-[#0633e8] lg:w-76 lg:h-76 relative rounded-full overflow-hidden drop-shadow-[0_0_30px_white]">
-            <Image
-              src="/aboutme/about.png"
-              alt="Profile"
-              fill
-              className="object-cover"
-            />
+          <div className="relative group w-[260px] h-[380px] lg:w-[300px] lg:h-[450px]">
+            {/* Outer Frame */}
+            <div className="absolute bg-black top-4 left-4 w-full h-full border-4 border-[#3c4b5d] rounded-lg z-0"></div>
+            {/* Image Container */}
+            <div className="relative bg-blue-600 w-full h-full z-10 rounded-lg overflow-hidden shadow-xl">
+              <Image
+                src="/aboutme/about.png"
+                alt="Profile"
+                fill
+                className="object-cover rounded-lg"
+              />
+            </div>
+            {/* Caption */}
+            <p className="text-center text-[#0633e8] font-medium mt-4 text-sm lg:text-base">
+              CEO & Founder
+            </p>
           </div>
         </div>
 
