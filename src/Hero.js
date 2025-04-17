@@ -15,7 +15,7 @@ export default function Hero() {
         
         </h2>
         <h4 className='font-semibold'>✨ You’re in the right place.</h4>
-        <p className="text-black sm:px-10 md:px-11 lg:px-0 md:text-center lg:text-start text-base md:text-lg mt-2">
+        <p className="text-black text-start ml-4 lg:ml-0 sm:px-10 md:px-11 lg:px-0 md:text-center lg:text-start text-base md:text-lg mt-2">
         We help businesses achieve powerful online visibility through expert  SEO, 📍 Local SEO, 📈 Digital Marketing, and 🎨 stunning Web Design. Whether you're a small business or a growing brand, we’ll build the strategy that brings results — not just promises.
         </p>
         <a href='#services'>

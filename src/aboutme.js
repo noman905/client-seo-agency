@@ -30,7 +30,7 @@ export default function AboutMe() {
               />
             </div>
             {/* Caption */}
-            <p className="text-center text-[#0633e8] font-medium mt-4 text-sm lg:text-base">
+            <p className="text-center  text-[#0633e8] font-semibold mt-4 text-sm lg:text-xl">
               CEO & Founder
             </p>
           </div>
