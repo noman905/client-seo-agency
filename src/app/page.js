@@ -7,10 +7,13 @@ import ContactForm from "@/Contact";
 import FAQs from "@/faq";
 import TeamSection from "@/team";
 
+import TrustedByTopBrands from "@/brand";
+
 import WhyChooseUs from "@/whychooseus";
 import Testimonials from "@/testimonials";
 import Footer from "@/footer";
 import RecentProjects from "@/recentproject";
+import BlogSection from "@/blog";
 
 export default function Home() {
   return (
@@ -24,13 +27,15 @@ export default function Home() {
     <Testimonials />
     <ContactForm />
     <WhyChooseUs />
+    <TrustedByTopBrands />
     {/* <RecentProjects /> */}
+    <BlogSection />
 
     <TeamSection />
-    {/* <FAQs /> */}
+    <FAQs />
 
     
-    {/* <Footer /> */}
+    <Footer />
     </>
   );
 }

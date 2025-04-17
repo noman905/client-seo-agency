@@ -10,15 +10,17 @@ export default function Hero() {
         <h1 className="text-[35px] text-center lg:text-start sm:text-[40px] md:text-[40px] lg:text-[42px] font-bold mt-11 lg:mt-8 text-black">
           Mohsin Arshad
         </h1>
-        <h2 className="text-[30px] sm:text-[41px] md:text-[41px] lg:text-[46px] lg:leading-16 font-bold text-black">
-          Digital Marketer <span className="text-blue-600">&amp; <br /> SEO Expert</span>
+        <h2 className="   text-black">
+        ❓ No leads? ❌ No revenue? 🚫 No traffic? 🚫 No clients? 😞 No business growth?
+        
         </h2>
+        <h4 className='font-semibold'>✨ You’re in the right place.</h4>
         <p className="text-black sm:px-10 md:px-11 lg:px-0 md:text-center lg:text-start text-base md:text-lg mt-2">
-          A one-stop solution for Digital Marketing, Web Design, SEO, and Content Writing to take your business to the next level.
+        We help businesses achieve powerful online visibility through expert  SEO, 📍 Local SEO, 📈 Digital Marketing, and 🎨 stunning Web Design. Whether you're a small business or a growing brand, we’ll build the strategy that brings results — not just promises.
         </p>
         <a href='#services'>
         <button className="bg-black  text-white px-5 py-3 rounded-lg font-semibold mt-6 hover:bg-[#082fca] transition duration-300">
-          View Our Services
+        Get My Free Strategy Session
         </button>
         </a>
       </div>

@@ -11,8 +11,7 @@ const navLinks = [
   'Services',
   'Blog',
   'Experience',
-  'Skills',
-  'Free Tools',
+  
   'Courses',
   'About Us',
 ];
