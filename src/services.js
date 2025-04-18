@@ -95,7 +95,7 @@ export default function Services() {
 const AnimatedCard = ({ icon, title }) => {
   return (
     <motion.div
-      className="min-w-[240px] border-2 border-[#0633e8]    bg-white   rounded-xl p-6 flex flex-col items-center justify-center   transition-transform duration-300"
+      className="min-w-[240px] border-2 border-[#155dfc]    bg-white   rounded-xl p-6 flex flex-col items-center justify-center   transition-transform duration-300"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
