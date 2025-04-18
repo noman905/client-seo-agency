@@ -1,5 +1,15 @@
 import Image from 'next/image';
 
+const button=[
+  { icon: '❓', text: 'No leads?' },
+  { icon: '❌', text: 'No revenue?' },
+  { icon: '🚫', text: 'No traffic?' },
+  { icon: '😞', text: 'No business growth?' },
+]
+
+
+
+
 export default function Hero() {
   return (
 
@@ -10,10 +20,16 @@ export default function Hero() {
         <h1 className="text-[35px] text-center lg:text-start sm:text-[40px] md:text-[40px] lg:text-[42px] font-bold mt-11 lg:mt-8 text-black">
           Mohsin Arshad
         </h1>
-        <h2 className="   text-black">
-        ❓ No leads? ❌ No revenue? 🚫 No traffic? 🚫 No clients? 😞 No business growth?
-        
-        </h2>
+        <div className="flex mb-3 flex-wrap justify-center lg:justify-start gap-3 mt-4">
+  {button.map((item, index) => (
+    <div
+      key={index}
+      className="flex items-center gap-1 bg-white border border-gray-200 shadow-lg px-1 py-1 rounded-full text-black text-sm sm:text-base font-medium hover:scale-105 transition duration-300"
+    >
+      <span>{item.icon}</span> {item.text}
+    </div>
+  ))}
+</div>
         <h4 className='font-semibold'>✨ You’re in the right place.</h4>
         <p className="text-black text-start ml-4 lg:ml-0 sm:px-10 md:px-11 lg:px-0 md:text-center lg:text-start text-base md:text-lg mt-2">
         We help businesses achieve powerful online visibility through expert  SEO, 📍 Local SEO, 📈 Digital Marketing, and 🎨 stunning Web Design. Whether you're a small business or a growing brand, we’ll build the strategy that brings results — not just promises.

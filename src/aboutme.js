@@ -15,26 +15,23 @@ export default function AboutMe() {
 
       {/* Flex Layout */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
-        {/* Left - Image with Styled Frame */}
-        <div className="w-full md:w-1/2 flex justify-center">
-          <div className="relative group w-[260px] h-[380px] lg:w-[300px] lg:h-[450px]">
-            {/* Outer Frame */}
-            <div className="absolute bg-black top-4 left-4 w-full h-full border-4 border-[#3c4b5d] rounded-lg z-0"></div>
-            {/* Image Container */}
-            <div className="relative bg-blue-600 w-full h-full z-10 rounded-lg overflow-hidden shadow-xl">
-              <Image
-                src="/aboutme/about.png"
-                alt="Profile"
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
-            {/* Caption */}
-            <p className="text-center  text-[#0633e8] font-semibold mt-4 text-sm lg:text-xl">
-              CEO & Founder
-            </p>
-          </div>
-        </div>
+       {/* Left - Circular Image */}
+<div className="w-full md:w-1/2 flex flex-col items-center">
+  <div className="relative w-[250px] h-[250px] sm:w-[280px] sm:h-[280px] md:w-[300px] md:h-[300px] lg:w-[340px] lg:h-[340px]">
+    <div className="absolute inset-0 bg-[#0633e8] rounded-full z-0 "></div>
+    <div className="relative z-10 w-full h-full rounded-full overflow-hidden border-4 ">
+      <Image
+        src="/aboutme/about.png"
+        alt="Profile"
+        fill
+        className="object-cover"
+      />
+    </div>
+  </div>
+  <p className="text-center text-[#0633e8] font-semibold mt-4 text-sm lg:text-xl">
+    CEO & Founder
+  </p>
+</div>
 
         {/* Right - Text */}
         <div className="w-full md:w-1/2 text-center md:text-left">
