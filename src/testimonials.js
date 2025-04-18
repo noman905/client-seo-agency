@@ -47,7 +47,7 @@ const testimonials = [
     message:
      "Mohsin Arshad's content writing service is outstanding. He wrote engaging, SEO-optimized, and informative content for my website, which connects well with my audience. His writing style perfectly matches my brand voice. Highly professional and top-notch quality!"
 ,
-    image: "/testi/testi5.jpg",
+    image: "/testi/testi6.jpg",
   }
   
 ];

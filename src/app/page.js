@@ -29,10 +29,11 @@ export default function Home() {
     <WhyChooseUs />
     <TrustedByTopBrands />
     {/* <RecentProjects /> */}
-    <BlogSection />
+    
 
-    <TeamSection />
+    {/* <TeamSection /> */}
     <FAQs />
+    <BlogSection />
 
     
     <Footer />
