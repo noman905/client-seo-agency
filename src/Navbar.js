@@ -12,7 +12,7 @@ const navLinks = [
   'Blog',
   'Experience',
   
-  'Courses',
+  
   'About Us',
 ];
 

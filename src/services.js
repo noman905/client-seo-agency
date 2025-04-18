@@ -2,36 +2,20 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion, useAnimation } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 
-// Services Array
 const services = [
-  {
-    title: 'Digital Marketing',
-    icon: '/Services/service1.png',
-  },
-  {
-    title: 'SEO',
-    icon: '/Services/service2.png',
-  },
-  {
-    title: 'Off Page SEO',
-    icon: '/Services/service5.png',
-  },
-  {
-    title: 'ON Page SEO',
-    icon: '/Services/service6.png',
-  },
-  {
-    title: 'Web Designing',
-    icon: '/Services/service3.png',
-  },
-  {
-    title: 'Content Writing',
-    icon: '/Services/service4.png',
-  },
+  { title: 'Digital Marketing', icon: '/Services/service1.png' },
+  { title: 'SEO', icon: '/Services/service2.png' },
+  { title: 'Off Page SEO', icon: '/Services/service5.png' },
+  { title: 'ON Page SEO', icon: '/Services/service6.png' },
+  { title: 'Web Designing', icon: '/Services/service3.png' },
+  { title: 'Content Writing', icon: '/Services/service4.png' },
 ];
+
+// Define your consistent primary color
+const primaryColor = '#155dfc';
 
 export default function Services() {
   const containerRef = useRef(null);
@@ -40,7 +24,7 @@ export default function Services() {
   useEffect(() => {
     if (containerRef.current) {
       const container = containerRef.current;
-      setScrollWidth(container.scrollWidth / 2); // half since we duplicate the array
+      setScrollWidth(container.scrollWidth / 2); // half because we duplicate the array
     }
   }, []);
 
@@ -53,17 +37,17 @@ export default function Services() {
       className="bg-white py-16 px-4 md:px-12 lg:px-20"
       id="services"
     >
-      <div className="max-w-7xl mx-auto mt-5  text-center">
+      <div className="max-w-7xl mx-auto mt-5 text-center">
         <h2 className="text-4xl lg:text-[46px] font-bold text-black mb-4">Our Services</h2>
         <p className="text-lg text-black mb-10 max-w-2xl mx-auto">
           We offer a full suite of digital solutions to help your brand grow online.
         </p>
 
         {/* Scrolling Boxes */}
-        <div className="overflow-hidden relative">
+        <div className="overflow-hidden relative py-4">
           <motion.div
             ref={containerRef}
-            className="flex gap-6 whitespace-nowrap"
+            className="flex gap-6 "
             animate={{ x: -scrollWidth }}
             transition={{
               repeat: Infinity,
@@ -79,13 +63,13 @@ export default function Services() {
         </div>
 
         {/* CTA Button */}
-        <Link href='allservices'>
-        <motion.button
-          whileHover={{ scale: 1.02 }}
-          className="mt-10 bg-[#155dfc] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-black transition-all duration-300"
-        >
-          View All Services
-        </motion.button>
+        <Link href="/allservices">
+          <motion.button
+            whileHover={{ scale: 1.02 }}
+            className="mt-10 bg-[#155dfc] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-black transition-all duration-300"
+          >
+            View All Services
+          </motion.button>
         </Link>
       </div>
     </motion.section>
@@ -95,7 +79,7 @@ export default function Services() {
 const AnimatedCard = ({ icon, title }) => {
   return (
     <motion.div
-      className="min-w-[240px] border-2 border-[#155dfc]    bg-white   rounded-xl p-6 flex flex-col items-center justify-center   transition-transform duration-300"
+      className="min-w-[240px] bg-white rounded-xl p-6 flex flex-col items-center justify-center shadow-[0_0_0_2px_#155dfc] hover:shadow-[0_0_12px_#155dfc] transition-all duration-300"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}

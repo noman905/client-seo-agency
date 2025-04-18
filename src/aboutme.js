@@ -3,7 +3,8 @@
 import Image from "next/image";
 
 const skills=[
-  'SEO & Off‑Page SEO',
+  'SEO ',
+  'Off‑Page SEO',
   'Local SEO',
   'Digital Marketing',
   'Web Design',
@@ -42,9 +43,7 @@ export default function AboutMe() {
 
         {/* Right - Text */}
         <div className="w-full md:w-1/2 text-center md:text-left">
-          <h1 className="pl-4 mb-3.5 text-[#0633e8] text-2xl font-semibold">
-            Your Strategic Growth Accelerator
-          </h1>
+          
           <p className="text-lg pl-4 font-normal text-start text-black mb-4">
             I am Mohsin Arshad, a results-driven Digital Marketer with over <strong>3 years of expertise</strong> and a proven track record of success for <strong>100+ clients</strong>. I don’t just execute campaigns—I engineer high-impact strategies that deliver measurable growth and long-term market dominance.
           </p>
