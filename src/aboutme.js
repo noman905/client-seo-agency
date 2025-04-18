@@ -3,12 +3,21 @@
 import Image from "next/image";
 
 const skills=[
-  'SEO ',
+  'Digital Marketing ',
+  'SEO',
+
   'Off‑Page SEO',
-  'Local SEO',
-  'Digital Marketing',
-  'Web Design',
+  'ON Page SEO',
+  'Web Designing',
+  'Content Writing',
 ]
+
+
+const trustedBy = [
+  '/testi/testi1.jpg',
+  '/testi/testi4.jpg',
+  '/testi/testi3.jpg',
+];
 
 export default function AboutMe() {
   return (
@@ -32,14 +41,86 @@ export default function AboutMe() {
         src="/aboutme/about.png"
         alt="Profile"
         fill
-        className=""
+        className=" "
       />
-    </div>
-  </div>
-  <p className="text-center text-[#0633e8] font-semibold mt-4 text-sm lg:text-xl">
-    CEO & Founder
-  </p>
+  
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+  <div className='absolute bottom-20 hidden lg:block lg:-bottom-20 lg:-left-[1px] '>
+  <div className="flex items-center gap-1 bg-[#ffffff] px-1 py-1 rounded-xl shadow-[#0633e8] shadow-lg">
+  
+    {/* Google Icon */}
+    <Image
+        src="/google.png"
+        alt="Google Icon"
+        width={50}
+        height={50}
+        className="h-10 w-10"
+      />
+  
+    <span className="text-black text-[12px] sm:text-[12px] font-semibold">
+  
+      TRUSTED BY
+    </span>
+    <div className="flex items-center -space-x-3">
+      {trustedBy.map((src, i) => (
+        <Image
+        key={i}
+        src={src}
+        alt={`images`}
+        width={40}
+        height={40}
+        className="w-[40px] h-[40px] rounded-full border-0 border-black "
+      />
+      ))}
+    </div>
+    <span className="text-black text-sm sm:text-[12px] ml-1 font-semibold">
+      & many more...
+    </span>
+  </div>
+  </div>
+
+
+
+
+
+
+
+  
+  </div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
 
         {/* Right - Text */}
         <div className="w-full md:w-1/2 text-center md:text-left">

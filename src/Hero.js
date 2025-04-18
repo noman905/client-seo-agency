@@ -7,7 +7,11 @@ const button=[
   { icon: '😞', text: 'No business growth?' },
 ]
 
-
+const trustedBy = [
+  '/testi/testi1.jpg',
+  '/testi/testi4.jpg',
+  '/testi/testi3.jpg',
+];
 
 
 export default function Hero() {
@@ -17,6 +21,7 @@ export default function Hero() {
     <section className="flex flex-col lg:flex-row items-center justify-between px-2 md:px-12 lg:px-18  ">
       {/* Text Content */}
       <div className="lg:w-1/2 text-center lg:text-left space-y-0">
+      
         <h1 className="text-[35px] text-center lg:text-start sm:text-[40px] md:text-[40px] lg:text-[42px] font-bold mt-11 lg:mt-8 text-black">
           Mohsin Arshad
         </h1>
@@ -44,10 +49,7 @@ export default function Hero() {
      {/* Image Section */}
      <div className="lg:w-1/2 mb-10 lg:mt-0 flex justify-center lg:justify-end">
   <div className="relative flex items-center justify-center">
-    {/* Blue Glow Behind Image */}
-    {/* <div className="absolute mt-24 z-0 w-[244px] h-[245px] sm:w-[300px] sm:h-[300px] md:w-[390px] md:h-[300px] lg:w-[385px] lg:h-[385px] rounded-full bg-[#1351d8] blur-2xl opacity-100"></div> */}
-
-    {/* Hero Image with Circle */}
+    
     <div className="mt-15 shadow-2xl shadow-blue-600 bg-[#0633e8] p-0 rounded-full shadow-3xl relative z-10">
       <Image
         src="/hero.png"
@@ -72,6 +74,8 @@ export default function Hero() {
       height={280}
       className="absolute -bottom-10 lg:bottom-0 right-28 lg:-right-16 h-[80px] w-[80px] sm:h-[100px] sm:w-[100px] md:h-[120px] md:w-[120px] lg:h-[110px] lg:w-[110px] object-contain shadow-2xl rounded-xl"
     />
+
+
     <Image
       src="/hero3.webp"
       alt="Decorative Image 3"
@@ -79,6 +83,46 @@ export default function Hero() {
       height={280}
       className="absolute  -top-10 lg:top-24 lg:bottom-50 left-1 lg:-left-32 h-[80px] w-[80px] sm:h-[100px] sm:w-[100px] md:h-[120px] md:w-[120px] lg:h-[130px] lg:w-[130px] object-contain shadow-2xl rounded-xl"
     />
+
+
+
+    
+<div className='absolute -bottom-27 lg:-bottom-5 lg:-left-[180px] '>
+<div className="flex items-center gap-1 bg-[#ffffff] px-1 py-1 rounded-xl shadow-[#0633e8] shadow-md">
+
+  {/* Google Icon */}
+  <Image
+      src="/google.png"
+      alt="Google Icon"
+      width={50}
+      height={50}
+      className="h-10 w-10"
+    />
+
+  <span className="text-black text-[12px] sm:text-[12px] font-semibold">
+
+    TRUSTED BY
+  </span>
+  <div className="flex items-center -space-x-3">
+    {trustedBy.map((src, i) => (
+      <Image
+      key={i}
+      src={src}
+      alt={`images`}
+      width={40}
+      height={40}
+      className="w-[40px] h-[40px] rounded-full border-0 border-black "
+    />
+    ))}
+  </div>
+  <span className="text-black text-sm sm:text-[12px] ml-1 font-semibold">
+    & many more...
+  </span>
+</div>
+</div>
+
+   
+    
     </div>
 
    
