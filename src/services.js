@@ -55,7 +55,7 @@ export default function Services() {
     >
       <div className="max-w-7xl mx-auto mt-5  text-center">
         <h2 className="text-4xl lg:text-[46px] font-bold text-black mb-4">Our Services</h2>
-        <p className="text-lg text-gray-700 mb-10 max-w-2xl mx-auto">
+        <p className="text-lg text-black mb-10 max-w-2xl mx-auto">
           We offer a full suite of digital solutions to help your brand grow online.
         </p>
 
@@ -95,7 +95,7 @@ export default function Services() {
 const AnimatedCard = ({ icon, title }) => {
   return (
     <motion.div
-      className="min-w-[240px] border-2 border-[#0832da] shadow-md  shadow-[#0832da] bg-white   rounded-xl p-6 flex flex-col items-center justify-center   transition-transform duration-300"
+      className="min-w-[240px] border-2 border-[#0633e8] shadow-md   bg-white   rounded-xl p-6 flex flex-col items-center justify-center   transition-transform duration-300"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
