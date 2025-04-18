@@ -109,7 +109,7 @@ export default function Testimonials() {
           </button>
 
           {/* Testimonial Content */}
-          <div className="relative h-[450px] sm:h-[300px] flex items-center justify-center">
+          <div className="relative h-[490px] sm:h-[300px] flex items-center justify-center">
             <AnimatePresence custom={direction} mode="wait">
               <motion.div
                 key={current}
